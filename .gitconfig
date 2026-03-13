@@ -1,0 +1,35 @@
+[user]
+	name = Corbin McNeill
+	email = corbimcn@amazon.com
+[alias]
+	ci = commit
+	st = status -s
+	sh = stash
+	br = branch
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)%an <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+	co = checkout
+	unstage = reset HEAD --
+	cp = cherry-pick
+	l = log --pretty=format:'%C(yellow)%h  %C(green)%<(20,trunc)%an  %C(magenta)%<(15)%ar  %C(cyan)%d  %C(reset)%s'
+	log = log --pretty=format:'%C(yellow)%h  %C(green)%<(20,trunc)%an  %C(magenta)%<(15)%ar  %C(cyan)%d  %C(reset)%s'
+	cherry = cherry-pick
+	am = commit --amend --no-edit
+	amend = commit --amend --no-edit
+[color]
+	ui = auto
+[core]
+	pager = delta
+[push]
+	default = simple
+[pull]
+	rebase = true
+[pager]
+	show = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	syntax-theme = OneHalfDark
+	dark = true
+[merge]
+	conflictStyle = zdiff3
